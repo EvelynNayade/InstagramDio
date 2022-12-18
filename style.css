@@ -1,12 +1,118 @@
-body{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #EDEDED;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
+}
 
+body {
     width: 100%;
-    
+    min-height: 1000px;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 1000px;
+}
+
+.telefone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.telefone img{
+    height: 50rem;
+}
+
+.contiunar_logado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.fundo_branco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.fundo_branco:nth-child(1){
+    min-width: 19rem;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.foto_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.login{
+    background-color: rgb(0, 38, 255);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logout{
+    margin-top: 1rem;
+}
+.trocar{
+    color: rgb(126, 126, 126);
+}
+
+.obter_app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download_app{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;       
+}
+
+.download_app:nth-child(1){
+    background-image: url('./imagens/apple.png');
+}
+.download_app:nth-child(2){
+    background-image: url('./imagens/googlePlay.png');
 }
